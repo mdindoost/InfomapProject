@@ -1,0 +1,30 @@
+# Compiled source files
+*.out
+*.o
+*.so
+*.a
+*.lo
+*.la
+*.obj
+*.dylib
+*.dll
+*.exe
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# IDE and editor settings
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Ignore binary and library output directories
+bin/
+lib/
+
+# Ignore auto-generated files
+*.swp
+*~
