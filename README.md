@@ -16,6 +16,7 @@ A C++ wrapper for the Infomap community detection algorithm.
 # Clone the main repository
 git clone https://github.com/mdindoost/InfomapProject.git
 cd InfomapProject
+'''
 
 # Initialize and update the Infomap submodule
 git submodule init
