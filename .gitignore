@@ -28,3 +28,5 @@ lib/
 # Ignore auto-generated files
 *.swp
 *~
+build/
+*.o
