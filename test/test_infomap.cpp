@@ -46,8 +46,8 @@ void print_result(const InfomapResult& result) {
 
 int main() {
     // Test graph
-    std::vector<int> src = {0, 0, 1, 2};
-    std::vector<int> dst = {1, 2, 2, 0};
+    std::vector<int> src = {0, 0, 1, 2, 3 , 4 , 5};
+    std::vector<int> dst = {1, 2, 2, 0, 4 , 5 , 3};
     int num_nodes = 3;
 
     // Create parameters with default values

@@ -53,9 +53,18 @@ $(TEST_OBJ): $(TEST_SRC) | $(OBJ_DIR)
 $(TEST_EXEC): $(WRAPPER_OBJ) $(TEST_OBJ) | $(BUILD_DIR)
 	$(CXX) $(WRAPPER_OBJ) $(TEST_OBJ) $(INFOMAP_OBJS) -o $@ $(LDFLAGS)
 
+# Run the program
+.PHONY: run
+run: all
+	./$(TEST_EXEC)
+
+# Build and run (shorthand)
+.PHONY: test
+test: run
+
 # Clean
 clean:
 	rm -rf $(BUILD_DIR)
 	cd extern/infomap && make clean
 
-.PHONY: all clean print-objects
+.PHONY: all clean print-objects run test

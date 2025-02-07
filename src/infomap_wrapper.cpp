@@ -16,24 +16,6 @@ InfomapResult run_Infomap(
     result.success = false;
 
     try {
-        // Input validation
-        if (src.empty() || dst.empty()) {
-            throw std::runtime_error("Empty input vectors");
-        }
-        if (src.size() != dst.size()) {
-            throw std::runtime_error("Source and destination vectors must have same size");
-        }
-        if (num_nodes <= 0) {
-            throw std::runtime_error("Number of nodes must be positive");
-        }
-
-        // Check for invalid node IDs
-        for (size_t i = 0; i < src.size(); ++i) {
-            if (src[i] < 0 || src[i] >= num_nodes || dst[i] < 0 || dst[i] >= num_nodes) {
-                throw std::runtime_error("Invalid node ID found");
-            }
-        }
-
         // Create InfomapBase instance
         infomap::InfomapBase infomap;
         
