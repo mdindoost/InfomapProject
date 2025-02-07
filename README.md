@@ -16,22 +16,23 @@ A C++ wrapper for the Infomap community detection algorithm.
 # Clone the main repository
 git clone https://github.com/mdindoost/InfomapProject.git
 cd InfomapProject
-'''
+```
 
 # Initialize and update the Infomap submodule
+```bash
 git submodule init
 git submodule update
-
+```
 Build the project:
-
+```bash
 make clean
 make
-
+```
 Run the test program:
-
+```bash
 ./build/test_infomap
 Project Structure
-
+```
 src/ - Source files
 include/ - Header files
 test/ - Test files
